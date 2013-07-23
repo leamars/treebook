@@ -10,7 +10,7 @@
 
 <div class = "navbar navbar-fixed-top">
 	<div class = "navbar-inner">
-		<div class = "container">
+		<div class = "container-fluid">
 			<a href="#" class="brand">Treebook</a>
 			<ul class="nav">
 				<li class="active">
@@ -21,9 +21,23 @@
 		</div>
 	</div>
 <div class="container">
+	   <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
 <%= yield %>
 </div>
+</div>
 
+<div class = "navbar navbar-fixed-bottom">
+	<div class = "navbar-inner">
+<div id="footer">
+	<div class="container">
+		<p class="muted credit">
+			"Here's a footer to my RoR app! Yay!"
+		</p>
+	</div>
+</div>
+</div>
+</div>
 
 </body>
 </html>
